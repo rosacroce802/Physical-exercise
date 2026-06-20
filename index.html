@@ -38,21 +38,21 @@
   border-radius:26px;box-shadow:var(--shadow-lg);padding:22px 18px 18px}
 .bodymap .bm-head{display:flex;align-items:baseline;justify-content:space-between;
   flex-wrap:wrap;gap:2px 14px;padding:0 8px 6px}
-.bodymap .bm-head h3{font-size:16.5px;margin:0;color:var(--ink)}
-.bodymap .bm-head span{font-size:13px;color:var(--muted);white-space:nowrap}
+.bodymap .bm-head h3{font-size:19px;margin:0;color:var(--ink)}
+.bodymap .bm-head span{font-size:14.5px;color:var(--muted);white-space:nowrap}
 
 /* ===== About grid ===== */
 .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:34px;margin-top:22px;align-items:start}
 .bm-figure{display:block;width:100%;height:auto;max-height:520px;margin:0 auto}
 .bm-hot{cursor:pointer}
-.bm-hot circle.dot{fill:var(--accent);stroke:#fff;stroke-width:3;transition:r .18s}
-.bm-hot circle.ring{fill:none;stroke:var(--accent);stroke-width:2;opacity:.45;
+.bm-hot circle.dot{fill:var(--accent);stroke:#fff;stroke-width:3.5;r:13;transition:r .18s}
+.bm-hot circle.ring{fill:none;stroke:var(--accent);stroke-width:2.5;opacity:.5;r:15;
   transform-box:fill-box;transform-origin:center}
-.bm-hot:hover circle.dot,.bm-hot:focus circle.dot{r:11}
+.bm-hot:hover circle.dot,.bm-hot:focus circle.dot{r:16}
 .bm-hot:focus{outline:none}
-.bm-hot:focus circle.ring{opacity:.9}
-.bm-hot text{font-family:"Prompt";font-weight:500;font-size:13px;fill:var(--ink);
-  paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
+.bm-hot:focus circle.ring{opacity:.95}
+.bm-hot text{font-family:"Prompt";font-weight:600;font-size:15px;fill:var(--ink);
+  paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}
 .bm-hot:hover text{fill:var(--primary-deep)}
 @media (prefers-reduced-motion:no-preference){
   .bm-hot circle.ring{animation:ringpulse 2.6s ease-out infinite}
@@ -63,7 +63,7 @@
   .bm-hot:nth-of-type(6) circle.ring{animation-delay:1.5s}
   .bm-hot:nth-of-type(7) circle.ring{animation-delay:1.8s}
 }
-@keyframes ringpulse{0%{r:9;opacity:.5}70%{r:20;opacity:0}100%{r:20;opacity:0}}
+@keyframes ringpulse{0%{r:14;opacity:.55}70%{r:27;opacity:0}100%{r:27;opacity:0}}
 .bm-foot{text-align:center;font-size:13px;color:var(--muted);margin-top:6px}
 
 /* ===== Section heading ===== */
@@ -77,16 +77,16 @@
 /* ===== Category grid ===== */
 .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:32px}
 .cat-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
-  padding:22px 20px;display:flex;flex-direction:column;gap:10px;transition:transform .18s,box-shadow .2s,border-color .2s}
+  padding:24px 22px;display:flex;flex-direction:column;gap:11px;transition:transform .18s,box-shadow .2s,border-color .2s}
 .cat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#cfe6df}
-.cat-ic{width:50px;height:50px;border-radius:14px;background:var(--primary-soft);
+.cat-ic{width:56px;height:56px;border-radius:15px;background:var(--primary-soft);
   display:grid;place-items:center}
-.cat-ic svg{width:27px;height:27px;stroke:var(--primary-deep);fill:none;stroke-width:1.7}
-.cat-card h3{font-size:18px;margin:2px 0 0;color:var(--ink)}
-.cat-card .meta{font-size:13.5px;color:var(--muted)}
-.cat-card .go{margin-top:auto;font-family:"Prompt";font-weight:500;font-size:14.5px;color:var(--primary-deep);
+.cat-ic svg{width:30px;height:30px;stroke:var(--primary-deep);fill:none;stroke-width:1.7}
+.cat-card h3{font-size:20.5px;margin:2px 0 0;color:var(--ink)}
+.cat-card .meta{font-size:15px;color:var(--muted)}
+.cat-card .go{margin-top:auto;font-family:"Prompt";font-weight:600;font-size:16px;color:var(--primary-deep);
   display:inline-flex;align-items:center;gap:6px}
-.cat-card .go svg{width:16px;height:16px;transition:transform .18s}
+.cat-card .go svg{width:18px;height:18px;transition:transform .18s}
 .cat-card:hover .go svg{transform:translateX(4px)}
 
 /* ===== Symbols ===== */
@@ -98,8 +98,8 @@
   background:var(--accent);color:#fff;font-family:"Prompt";font-weight:600}
 .sym .ic.warn{background:#fff;border:3px solid var(--warn)}
 .sym .ic svg{width:26px;height:26px}
-.sym h4{margin:2px 0 2px;font-size:15.5px}
-.sym p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}
+.sym h4{margin:2px 0 2px;font-size:16.5px}
+.sym p{margin:0;font-size:15px;color:var(--muted);line-height:1.55}
 
 /* ===== Health teaser ===== */
 .health-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
@@ -140,7 +140,7 @@
   .bodymap{padding:18px 14px 14px}
   .bodymap .bm-head{flex-direction:column;gap:1px;align-items:flex-start}
   .bodymap .bm-head span{white-space:normal}
-  .bm-hot text{font-size:14px}
+  .bm-hot text{font-size:16px}
 }
 </style>
 </head>
@@ -185,7 +185,7 @@
 
     <!-- Body map signature -->
     <div class="bodymap">
-      <div class="bm-head"><h3>เลือกส่วนที่ต้องการบริหาร</h3><span>แตะที่จุดบนร่างกาย</span></div>
+      <div class="bm-head"><h3>เลือกส่วนที่ต้องการบริหาร</h3><span>แตะที่จุดสีส้ม เพื่อดูท่า</span></div>
       <svg class="bm-figure" viewBox="0 0 340 560" role="group" aria-label="แผนที่ร่างกาย เลือกส่วนที่ต้องการบริหาร" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
           <linearGradient id="bodyg" x1="0" y1="0" x2="0" y2="1">
@@ -390,5 +390,21 @@ if(window.GUIDE_DATA){
   });
 }
 </script>
+
+<!-- เมนูด้านล่าง: กดกลับหน้าแรกได้ง่ายทุกหน้า -->
+<nav class="bottomnav" aria-label="เมนูหลัก">
+  <a href="index.html" class="active" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>
+    <span>หน้าแรก</span>
+  </a>
+  <a href="guide.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z" /><path d="M19 3v18"/></svg>
+    <span>คู่มือบริหาร</span>
+  </a>
+  <a href="health.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 5 4-12 2 7h6"/></svg>
+    <span>บทความ</span>
+  </a>
+</nav>
 </body>
 </html>

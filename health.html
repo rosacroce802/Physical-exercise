@@ -313,5 +313,21 @@
 <script>
 document.getElementById('navtoggle').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
 </script>
+
+<!-- เมนูด้านล่าง: กดกลับหน้าแรกได้ง่ายทุกหน้า -->
+<nav class="bottomnav" aria-label="เมนูหลัก">
+  <a href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>
+    <span>หน้าแรก</span>
+  </a>
+  <a href="guide.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z" /><path d="M19 3v18"/></svg>
+    <span>คู่มือบริหาร</span>
+  </a>
+  <a href="health.html" class="active" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 5 4-12 2 7h6"/></svg>
+    <span>บทความ</span>
+  </a>
+</nav>
 </body>
 </html>
